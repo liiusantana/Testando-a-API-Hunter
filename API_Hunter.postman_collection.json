@@ -1,0 +1,526 @@
+{
+	"info": {
+		"_postman_id": "78808ea4-c914-41ce-b19d-ada6add33bef",
+		"name": "API_Hunter",
+		"description": "Coleção de testes da API Hunter ",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Leads",
+			"item": [
+				{
+					"name": "Criar novo lead",
+					"item": [
+						{
+							"name": "POST - Criar novo Lead",
+							"event": [
+								{
+									"listen": "prerequest",
+									"script": {
+										"id": "b584976c-734b-4466-b7ac-4a5efbe5f1dc",
+										"exec": [
+											"pm.iterationData.get(\"email_lead\")\r",
+											"pm.iterationData.get(\"frist_name_lead\")\r",
+											"pm.iterationData.get(\"last_name_lead\")\r",
+											"pm.iterationData.get(\"position_lead\")\r",
+											"pm.iterationData.get(\"company_lead\")\r",
+											"pm.iterationData.get(\"industry_lead\")"
+										],
+										"type": "text/javascript"
+									}
+								}
+							],
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "/*Para rodar com arquivo (Dado externo)\r\n{\r\n    \"email\": \"{{email_lead}}\",\r\n    \"first_name\": \"{{frist_name_lead}}\",\r\n    \"last_name\": \"{{last_name_lead}}\",\r\n    \"position\": \"{{position_lead}}\",\r\n    \"company\": \"{{company_lead}}\",\r\n    \"company_industry\": \"{{industry_lead}}\"\r\n}*/\r\n\r\n//Para funcionar com o monitor\r\n{\r\n    \"email\": \"livia@example.com\",\r\n    \"first_name\": \"Lívia\",\r\n    \"last_name\": \"Anjos\",\r\n    \"position\": \"QA\",\r\n    \"company\": \"QAs\",\r\n    \"company_industry\": \"TI\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{url_base}}/leads",
+									"host": [
+										"{{url_base}}"
+									],
+									"path": [
+										"leads"
+									]
+								},
+								"description": "POST - Criar novo Lead"
+							},
+							"response": []
+						}
+					],
+					"description": "Criar novo lead",
+					"protocolProfileBehavior": {},
+					"_postman_isSubFolder": true
+				},
+				{
+					"name": "Recuperar todos leads cadastrados",
+					"item": [
+						{
+							"name": "GET - Todos os leads",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{url_base}}/leads",
+									"host": [
+										"{{url_base}}"
+									],
+									"path": [
+										"leads"
+									]
+								},
+								"description": "Recuperar todos leads cadastrados"
+							},
+							"response": []
+						},
+						{
+							"name": "GET - Busca  lead específico",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{url_base}}/leads/{{id_lead}}",
+									"host": [
+										"{{url_base}}"
+									],
+									"path": [
+										"leads",
+										"{{id_lead}}"
+									]
+								},
+								"description": "Recuperar todos leads cadastrados"
+							},
+							"response": []
+						}
+					],
+					"description": "Recuperar leads ",
+					"event": [
+						{
+							"listen": "prerequest",
+							"script": {
+								"id": "5ad8c6de-04b2-4b53-a118-f52c20249859",
+								"type": "text/javascript",
+								"exec": [
+									""
+								]
+							}
+						},
+						{
+							"listen": "test",
+							"script": {
+								"id": "09cefc3c-b569-4dab-af59-fda6e8d444f7",
+								"type": "text/javascript",
+								"exec": [
+									""
+								]
+							}
+						}
+					],
+					"protocolProfileBehavior": {},
+					"_postman_isSubFolder": true
+				},
+				{
+					"name": "Editar lead",
+					"item": [
+						{
+							"name": "PUT - Editar Lead",
+							"event": [
+								{
+									"listen": "prerequest",
+									"script": {
+										"id": "05d67150-56a3-4158-bbef-4fcc04a9b622",
+										"exec": [
+											"pm.iterationData.get(\"email_lead_edit\")\r",
+											"pm.iterationData.get(\"frist_name_lead_edit\")\r",
+											"pm.iterationData.get(\"last_name_lead_edit\")\r",
+											"pm.iterationData.get(\"position_lead_edit\")\r",
+											"pm.iterationData.get(\"company_lead_edit\")\r",
+											"pm.iterationData.get(\"industry_lead_edit\")"
+										],
+										"type": "text/javascript"
+									}
+								}
+							],
+							"request": {
+								"method": "PUT",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "//*Para rodar com arquivo (Dado externo)\r\n/*{\r\n    \"email\": \"{{email_lead_edit}}\",\r\n    \"first_name\": \"{{frist_name_lead_edit}}\",\r\n    \"last_name\": \"{{last_name_lead_edit}}\",\r\n    \"position\": \"{{position_lead_edit}}\",\r\n    \"company\": \"{{company_lead_edit}}\",\r\n    \"company_industry\": \"{{industry_lead_edit}}\"\r\n}*/\r\n\r\n//Para funcionar com o monitor\r\n{\r\n    \"email\": \"livia1@example.com\",\r\n    \"first_name\": \"Lívia1\",\r\n    \"last_name\": \"Anjos1\",\r\n    \"position\": \"QA1\",\r\n    \"company\": \"QAs1\",\r\n    \"company_industry\": \"TI1\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{url_base}}/leads/{{id_lead}}",
+									"host": [
+										"{{url_base}}"
+									],
+									"path": [
+										"leads",
+										"{{id_lead}}"
+									]
+								},
+								"description": "PUT - Editar Lead"
+							},
+							"response": []
+						}
+					],
+					"description": "Editar lead",
+					"protocolProfileBehavior": {},
+					"_postman_isSubFolder": true
+				},
+				{
+					"name": "Excluir lead",
+					"item": [
+						{
+							"name": "DELETE - Excluir Lead",
+							"request": {
+								"method": "DELETE",
+								"header": [],
+								"url": {
+									"raw": "{{url_base}}/leads/{{id_lead}}",
+									"host": [
+										"{{url_base}}"
+									],
+									"path": [
+										"leads",
+										"{{id_lead}}"
+									]
+								},
+								"description": "DELETE - Excluir Lead"
+							},
+							"response": []
+						}
+					],
+					"description": "Excluir lead",
+					"protocolProfileBehavior": {},
+					"_postman_isSubFolder": true
+				}
+			],
+			"description": "Pasta para suits de testes de Leads",
+			"protocolProfileBehavior": {}
+		},
+		{
+			"name": "Leads_Lists",
+			"item": [
+				{
+					"name": "Criar nova lista de lead",
+					"item": [
+						{
+							"name": "POST - Criar Lead List",
+							"event": [
+								{
+									"listen": "prerequest",
+									"script": {
+										"id": "0bd54403-975c-4b7d-b751-44b3d24fadd0",
+										"exec": [
+											"pm.iterationData.get(\"lead_list_name\")"
+										],
+										"type": "text/javascript"
+									}
+								}
+							],
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "//*Para rodar com arquivo (Dado externo)\r\n/*{\r\n  \"name\": \"{{lead_list_name}}\"\r\n}*/\r\n\r\n//Para funcionar com o monitor\r\n{\r\n  \"name\": \"Livia\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{url_base}}/leads_lists",
+									"host": [
+										"{{url_base}}"
+									],
+									"path": [
+										"leads_lists"
+									]
+								},
+								"description": "POST - Criar Lead List"
+							},
+							"response": []
+						}
+					],
+					"description": "Criar nova lista de lead",
+					"protocolProfileBehavior": {},
+					"_postman_isSubFolder": true
+				},
+				{
+					"name": "GET Leads List",
+					"item": [
+						{
+							"name": "GET - Todas Leads Lists",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{url_base}}/leads_lists",
+									"host": [
+										"{{url_base}}"
+									],
+									"path": [
+										"leads_lists"
+									]
+								},
+								"description": "GET - Todas Leads Lists"
+							},
+							"response": []
+						},
+						{
+							"name": "GET - Recuperar lead list",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{url_base}}/leads_lists/{{id_lead_list}}",
+									"host": [
+										"{{url_base}}"
+									],
+									"path": [
+										"leads_lists",
+										"{{id_lead_list}}"
+									]
+								},
+								"description": "GET - Recuperar lead list"
+							},
+							"response": []
+						}
+					],
+					"description": "Recuperar leads list",
+					"event": [
+						{
+							"listen": "prerequest",
+							"script": {
+								"id": "1c6d6805-b226-4eae-9491-17e20beb7912",
+								"type": "text/javascript",
+								"exec": [
+									""
+								]
+							}
+						},
+						{
+							"listen": "test",
+							"script": {
+								"id": "c7adb95e-8e8d-440c-b8d2-544faeac5806",
+								"type": "text/javascript",
+								"exec": [
+									""
+								]
+							}
+						}
+					],
+					"protocolProfileBehavior": {},
+					"_postman_isSubFolder": true
+				},
+				{
+					"name": "Editar lista de lead",
+					"item": [
+						{
+							"name": "PUT - Editar Lead List",
+							"event": [
+								{
+									"listen": "prerequest",
+									"script": {
+										"id": "2ec2a6bf-2235-4966-a72d-289fb52afba1",
+										"exec": [
+											"pm.iterationData.get(\"lead_list_name_edit\")"
+										],
+										"type": "text/javascript"
+									}
+								}
+							],
+							"request": {
+								"method": "PUT",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "////*Para rodar com arquivo (Dado externo)\r\n/*{\r\n    \"name\": \"{{lead_list_name_edit}}\"\r\n}*/\r\n\r\n//Para funcionar com o monitor\r\n{\r\n  \"name\": \"Livia1\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{url_base}}/leads_lists/{{id_lead_list}}",
+									"host": [
+										"{{url_base}}"
+									],
+									"path": [
+										"leads_lists",
+										"{{id_lead_list}}"
+									]
+								},
+								"description": "PUT - Editar Lead List"
+							},
+							"response": []
+						}
+					],
+					"description": "Editar lista de lead",
+					"protocolProfileBehavior": {},
+					"_postman_isSubFolder": true
+				},
+				{
+					"name": "Excluir lista de lead",
+					"item": [
+						{
+							"name": "DELETE - Excluir Lead List",
+							"request": {
+								"method": "DELETE",
+								"header": [],
+								"url": {
+									"raw": "{{url_base}}/leads_lists/{{id_lead_list}}",
+									"host": [
+										"{{url_base}}"
+									],
+									"path": [
+										"leads_lists",
+										"{{id_lead_list}}"
+									]
+								},
+								"description": "DELETE - Excluir Lead List"
+							},
+							"response": []
+						}
+					],
+					"description": "Excluir lista de lead",
+					"protocolProfileBehavior": {},
+					"_postman_isSubFolder": true
+				}
+			],
+			"description": "Pasta de suites de testes de leads lists",
+			"event": [
+				{
+					"listen": "prerequest",
+					"script": {
+						"id": "c879f9ba-9bb1-4e60-bd42-6909d4ef6dc8",
+						"type": "text/javascript",
+						"exec": [
+							""
+						]
+					}
+				},
+				{
+					"listen": "test",
+					"script": {
+						"id": "29df1619-632e-4951-8458-9a963ecfcc4a",
+						"type": "text/javascript",
+						"exec": [
+							""
+						]
+					}
+				}
+			],
+			"protocolProfileBehavior": {}
+		}
+	],
+	"auth": {
+		"type": "apikey",
+		"apikey": [
+			{
+				"key": "value",
+				"value": "eb3697c6ff0dbc8d3167e5754aa304f6afbff5f7",
+				"type": "string"
+			},
+			{
+				"key": "key",
+				"value": "api_key",
+				"type": "string"
+			},
+			{
+				"key": "in",
+				"value": "query",
+				"type": "string"
+			}
+		]
+	},
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"id": "51028be8-764f-48f2-8d12-18cba62b21f2",
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"id": "6bb0a61d-019f-4e65-a132-5fd7e816b932",
+				"type": "text/javascript",
+				"exec": [
+					"/*Testes para requisições GET",
+					"Status code 200",
+					"String OK no response code*/",
+					"if (pm.request.method == 'GET'){",
+					"    pm.test(\"Status code is 200\", function () {",
+					"        pm.response.to.have.status(200);",
+					"    });",
+					"    pm.test(\"Status code name has string\", function () {",
+					"        pm.response.to.have.status(\"OK\");",
+					"    });",
+					"}",
+					"",
+					"/*Testes para requisições GET e POST",
+					"Executado em  menos de 2s*/",
+					"if (pm.request.method == 'GET'|| pm.request.method == 'POST'){",
+					"    pm.test(\"Response time is less than 2000ms\", function () {",
+					"        pm.expect(pm.response.responseTime).to.be.below(2000);",
+					"    });",
+					"}",
+					"",
+					"/*Testes para requisições POST",
+					"Sucesso nas requisições de POST (200,201 ou 202)",
+					"String 'Created' no response code",
+					"*/",
+					"if (pm.request.method == 'POST'){",
+					"    pm.test(\"Successful POST request\", function () {",
+					"        pm.expect(pm.response.code).to.be.oneOf([200, 201, 202]);",
+					"    });",
+					"    pm.test(\"Status code name has string\", function () {",
+					"        pm.response.to.have.status(\"Created\");",
+					"    });",
+					"    if(pm.info.requestName == 'POST - Criar novo Lead')",
+					"      pm.environment.set (\"id_lead\", pm.response.json().data.id);  ",
+					"    }",
+					"    ",
+					"    if(pm.info.requestName == 'POST - Criar Lead List'){",
+					"      pm.environment.set (\"id_lead_list\", pm.response.json().data.list_id);",
+					"    }",
+					"",
+					"/*Testes para requisições PUT e DELETE",
+					"String 'NO content' no response code",
+					"Responde Code 204 */",
+					"if (pm.request.method == 'DELETE'|| pm.request.method == 'PUT'){",
+					"     pm.test(\"Status code name has string\", function () {",
+					"        pm.response.to.have.status(\"No Content\");",
+					"    });",
+					"      pm.test(\"Status code is 204\", function () {",
+					"        pm.response.to.have.status(204);",
+					"    });",
+					"}"
+				]
+			}
+		}
+	],
+	"protocolProfileBehavior": {}
+}
