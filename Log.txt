@@ -1,0 +1,439 @@
+//Rodando os testes com arquivo de dados
+C:\Users\t058442\Documents\Pessoal\Curso_Postman_Udemy\Hunter>newman run -d Dados/dados_lead.csv API_Hunter.postman_collection.json -e Testes.postman_environment.json
+newman
+
+API_Hunter
+
+Iteration 1/6
+
+□ Leads / Criar novo lead
+└ POST - Criar novo Lead
+  POST https://api.hunter.io/v2//leads?api_key=eb3697c6ff0dbc8d3167e5754aa304f6afbff5f7 [201 Created, 1.75KB, 1311ms]
+  √  Response time is less than 2000ms
+  √  Successful POST request
+  √  Status code name has string
+
+□ Leads / Recuperar todos leads cadastrados
+└ GET - Todos os leads
+  GET https://api.hunter.io/v2//leads?api_key=eb3697c6ff0dbc8d3167e5754aa304f6afbff5f7 [200 OK, 1.79KB, 405ms]
+  √  Status code is 200
+  √  Status code name has string
+  √  Response time is less than 2000ms
+
+└ GET - Busca  lead específico
+  GET https://api.hunter.io/v2//leads/68640945?api_key=eb3697c6ff0dbc8d3167e5754aa304f6afbff5f7 [200 OK, 1.55KB, 384ms]
+  √  Status code is 200
+  √  Status code name has string
+  √  Response time is less than 2000ms
+
+□ Leads / Editar lead
+└ PUT - Editar Lead
+  PUT https://api.hunter.io/v2//leads/68640945?api_key=eb3697c6ff0dbc8d3167e5754aa304f6afbff5f7 [204 No Content, 840B, 1017ms]
+  √  Status code name has string
+  √  Status code is 204
+
+□ Leads / Excluir lead
+└ DELETE - Excluir Lead
+  DELETE https://api.hunter.io/v2//leads/68640945?api_key=eb3697c6ff0dbc8d3167e5754aa304f6afbff5f7 [204 No Content, 840B, 477ms]
+  √  Status code name has string
+  √  Status code is 204
+
+□ Leads_Lists / Criar nova lista de lead
+└ POST - Criar Lead List
+  POST https://api.hunter.io/v2//leads_lists?api_key=eb3697c6ff0dbc8d3167e5754aa304f6afbff5f7 [201 Created, 1.07KB, 508ms]
+  √  Response time is less than 2000ms
+  √  Successful POST request
+  √  Status code name has string
+
+□ Leads_Lists / GET Leads List
+└ GET - Todas Leads Lists
+  GET https://api.hunter.io/v2//leads_lists?api_key=eb3697c6ff0dbc8d3167e5754aa304f6afbff5f7 [200 OK, 1.27KB, 353ms]
+  √  Status code is 200
+  √  Status code name has string
+  √  Response time is less than 2000ms
+
+└ GET - Recuperar lead list
+  GET https://api.hunter.io/v2//leads_lists/2602921?api_key=eb3697c6ff0dbc8d3167e5754aa304f6afbff5f7 [200 OK, 1.15KB, 400ms]
+  √  Status code is 200
+  √  Status code name has string
+  √  Response time is less than 2000ms
+
+□ Leads_Lists / Editar lista de lead
+└ PUT - Editar Lead List
+  PUT https://api.hunter.io/v2//leads_lists/2602921?api_key=eb3697c6ff0dbc8d3167e5754aa304f6afbff5f7 [204 No Content, 840B, 408ms]
+  √  Status code name has string
+  √  Status code is 204
+
+□ Leads_Lists / Excluir lista de lead
+└ DELETE - Excluir Lead List
+  DELETE https://api.hunter.io/v2//leads_lists/2602921?api_key=eb3697c6ff0dbc8d3167e5754aa304f6afbff5f7 [204 No Content, 840B, 387ms]
+  √  Status code name has string
+  √  Status code is 204
+
+Iteration 2/6
+
+□ Leads / Criar novo lead
+└ POST - Criar novo Lead
+  POST https://api.hunter.io/v2//leads?api_key=eb3697c6ff0dbc8d3167e5754aa304f6afbff5f7 [201 Created, 1.59KB, 4s]
+  1. Response time is less than 2000ms
+  √  Successful POST request
+  √  Status code name has string
+
+□ Leads / Recuperar todos leads cadastrados
+└ GET - Todos os leads
+  GET https://api.hunter.io/v2//leads?api_key=eb3697c6ff0dbc8d3167e5754aa304f6afbff5f7 [200 OK, 1.79KB, 378ms]
+  √  Status code is 200
+  √  Status code name has string
+  √  Response time is less than 2000ms
+
+└ GET - Busca  lead específico
+  GET https://api.hunter.io/v2//leads/68640953?api_key=eb3697c6ff0dbc8d3167e5754aa304f6afbff5f7 [200 OK, 1.55KB, 360ms]
+  √  Status code is 200
+  √  Status code name has string
+  √  Response time is less than 2000ms
+
+□ Leads / Editar lead
+└ PUT - Editar Lead
+  PUT https://api.hunter.io/v2//leads/68640953?api_key=eb3697c6ff0dbc8d3167e5754aa304f6afbff5f7 [204 No Content, 840B, 1019ms]
+  √  Status code name has string
+  √  Status code is 204
+
+□ Leads / Excluir lead
+└ DELETE - Excluir Lead
+  DELETE https://api.hunter.io/v2//leads/68640953?api_key=eb3697c6ff0dbc8d3167e5754aa304f6afbff5f7 [204 No Content, 840B, 526ms]
+  √  Status code name has string
+  √  Status code is 204
+
+□ Leads_Lists / Criar nova lista de lead
+└ POST - Criar Lead List
+  POST https://api.hunter.io/v2//leads_lists?api_key=eb3697c6ff0dbc8d3167e5754aa304f6afbff5f7 [201 Created, 1.07KB, 405ms]
+  √  Response time is less than 2000ms
+  √  Successful POST request
+  √  Status code name has string
+
+□ Leads_Lists / GET Leads List
+└ GET - Todas Leads Lists
+  GET https://api.hunter.io/v2//leads_lists?api_key=eb3697c6ff0dbc8d3167e5754aa304f6afbff5f7 [200 OK, 1.27KB, 30.3s]
+  √  Status code is 200
+  √  Status code name has string
+  2. Response time is less than 2000ms
+
+└ GET - Recuperar lead list
+  GET https://api.hunter.io/v2//leads_lists/2602923?api_key=eb3697c6ff0dbc8d3167e5754aa304f6afbff5f7 [200 OK, 1.15KB, 387ms]
+  √  Status code is 200
+  √  Status code name has string
+  √  Response time is less than 2000ms
+
+□ Leads_Lists / Editar lista de lead
+└ PUT - Editar Lead List
+  PUT https://api.hunter.io/v2//leads_lists/2602923?api_key=eb3697c6ff0dbc8d3167e5754aa304f6afbff5f7 [204 No Content, 840B, 486ms]
+  √  Status code name has string
+  √  Status code is 204
+
+□ Leads_Lists / Excluir lista de lead
+└ DELETE - Excluir Lead List
+  DELETE https://api.hunter.io/v2//leads_lists/2602923?api_key=eb3697c6ff0dbc8d3167e5754aa304f6afbff5f7 [204 No Content, 840B, 389ms]
+  √  Status code name has string
+  √  Status code is 204
+
+Iteration 3/6
+
+□ Leads / Criar novo lead
+└ POST - Criar novo Lead
+  POST https://api.hunter.io/v2//leads?api_key=eb3697c6ff0dbc8d3167e5754aa304f6afbff5f7 [201 Created, 1.59KB, 1536ms]
+  √  Response time is less than 2000ms
+  √  Successful POST request
+  √  Status code name has string
+
+□ Leads / Recuperar todos leads cadastrados
+└ GET - Todos os leads
+  GET https://api.hunter.io/v2//leads?api_key=eb3697c6ff0dbc8d3167e5754aa304f6afbff5f7 [200 OK, 1.79KB, 367ms]
+  √  Status code is 200
+  √  Status code name has string
+  √  Response time is less than 2000ms
+
+└ GET - Busca  lead específico
+  GET https://api.hunter.io/v2//leads/68640999?api_key=eb3697c6ff0dbc8d3167e5754aa304f6afbff5f7 [200 OK, 1.55KB, 391ms]
+  √  Status code is 200
+  √  Status code name has string
+  √  Response time is less than 2000ms
+
+□ Leads / Editar lead
+└ PUT - Editar Lead
+  PUT https://api.hunter.io/v2//leads/68640999?api_key=eb3697c6ff0dbc8d3167e5754aa304f6afbff5f7 [204 No Content, 840B, 1058ms]
+  √  Status code name has string
+  √  Status code is 204
+
+□ Leads / Excluir lead
+└ DELETE - Excluir Lead
+  DELETE https://api.hunter.io/v2//leads/68640999?api_key=eb3697c6ff0dbc8d3167e5754aa304f6afbff5f7 [204 No Content, 840B, 466ms]
+  √  Status code name has string
+  √  Status code is 204
+
+□ Leads_Lists / Criar nova lista de lead
+└ POST - Criar Lead List
+  POST https://api.hunter.io/v2//leads_lists?api_key=eb3697c6ff0dbc8d3167e5754aa304f6afbff5f7 [201 Created, 1.07KB, 432ms]
+  √  Response time is less than 2000ms
+  √  Successful POST request
+  √  Status code name has string
+
+□ Leads_Lists / GET Leads List
+└ GET - Todas Leads Lists
+  GET https://api.hunter.io/v2//leads_lists?api_key=eb3697c6ff0dbc8d3167e5754aa304f6afbff5f7 [200 OK, 1.27KB, 356ms]
+  √  Status code is 200
+  √  Status code name has string
+  √  Response time is less than 2000ms
+
+└ GET - Recuperar lead list
+  GET https://api.hunter.io/v2//leads_lists/2602924?api_key=eb3697c6ff0dbc8d3167e5754aa304f6afbff5f7 [200 OK, 1.15KB, 469ms]
+  √  Status code is 200
+  √  Status code name has string
+  √  Response time is less than 2000ms
+
+□ Leads_Lists / Editar lista de lead
+└ PUT - Editar Lead List
+  PUT https://api.hunter.io/v2//leads_lists/2602924?api_key=eb3697c6ff0dbc8d3167e5754aa304f6afbff5f7 [204 No Content, 840B, 452ms]
+  √  Status code name has string
+  √  Status code is 204
+
+□ Leads_Lists / Excluir lista de lead
+└ DELETE - Excluir Lead List
+  DELETE https://api.hunter.io/v2//leads_lists/2602924?api_key=eb3697c6ff0dbc8d3167e5754aa304f6afbff5f7 [204 No Content, 840B, 380ms]
+  √  Status code name has string
+  √  Status code is 204
+
+Iteration 4/6
+
+□ Leads / Criar novo lead
+└ POST - Criar novo Lead
+  POST https://api.hunter.io/v2//leads?api_key=eb3697c6ff0dbc8d3167e5754aa304f6afbff5f7 [201 Created, 1.59KB, 1128ms]
+  √  Response time is less than 2000ms
+  √  Successful POST request
+  √  Status code name has string
+
+□ Leads / Recuperar todos leads cadastrados
+└ GET - Todos os leads
+  GET https://api.hunter.io/v2//leads?api_key=eb3697c6ff0dbc8d3167e5754aa304f6afbff5f7 [200 OK, 1.79KB, 363ms]
+  √  Status code is 200
+  √  Status code name has string
+  √  Response time is less than 2000ms
+
+└ GET - Busca  lead específico
+  GET https://api.hunter.io/v2//leads/68641017?api_key=eb3697c6ff0dbc8d3167e5754aa304f6afbff5f7 [200 OK, 1.55KB, 365ms]
+  √  Status code is 200
+  √  Status code name has string
+  √  Response time is less than 2000ms
+
+□ Leads / Editar lead
+└ PUT - Editar Lead
+  PUT https://api.hunter.io/v2//leads/68641017?api_key=eb3697c6ff0dbc8d3167e5754aa304f6afbff5f7 [204 No Content, 840B, 1093ms]
+  √  Status code name has string
+  √  Status code is 204
+
+□ Leads / Excluir lead
+└ DELETE - Excluir Lead
+  DELETE https://api.hunter.io/v2//leads/68641017?api_key=eb3697c6ff0dbc8d3167e5754aa304f6afbff5f7 [204 No Content, 840B, 462ms]
+  √  Status code name has string
+  √  Status code is 204
+
+□ Leads_Lists / Criar nova lista de lead
+└ POST - Criar Lead List
+  POST https://api.hunter.io/v2//leads_lists?api_key=eb3697c6ff0dbc8d3167e5754aa304f6afbff5f7 [201 Created, 1.07KB, 438ms]
+  √  Response time is less than 2000ms
+  √  Successful POST request
+  √  Status code name has string
+
+□ Leads_Lists / GET Leads List
+└ GET - Todas Leads Lists
+  GET https://api.hunter.io/v2//leads_lists?api_key=eb3697c6ff0dbc8d3167e5754aa304f6afbff5f7 [200 OK, 1.27KB, 370ms]
+  √  Status code is 200
+  √  Status code name has string
+  √  Response time is less than 2000ms
+
+└ GET - Recuperar lead list
+  GET https://api.hunter.io/v2//leads_lists/2602925?api_key=eb3697c6ff0dbc8d3167e5754aa304f6afbff5f7 [200 OK, 1.15KB, 380ms]
+  √  Status code is 200
+  √  Status code name has string
+  √  Response time is less than 2000ms
+
+□ Leads_Lists / Editar lista de lead
+└ PUT - Editar Lead List
+  PUT https://api.hunter.io/v2//leads_lists/2602925?api_key=eb3697c6ff0dbc8d3167e5754aa304f6afbff5f7 [204 No Content, 840B, 378ms]
+  √  Status code name has string
+  √  Status code is 204
+
+□ Leads_Lists / Excluir lista de lead
+└ DELETE - Excluir Lead List
+  DELETE https://api.hunter.io/v2//leads_lists/2602925?api_key=eb3697c6ff0dbc8d3167e5754aa304f6afbff5f7 [204 No Content, 840B, 363ms]
+  √  Status code name has string
+  √  Status code is 204
+
+Iteration 5/6
+
+□ Leads / Criar novo lead
+└ POST - Criar novo Lead
+  POST https://api.hunter.io/v2//leads?api_key=eb3697c6ff0dbc8d3167e5754aa304f6afbff5f7 [201 Created, 1.59KB, 617ms]
+  √  Response time is less than 2000ms
+  √  Successful POST request
+  √  Status code name has string
+
+□ Leads / Recuperar todos leads cadastrados
+└ GET - Todos os leads
+  GET https://api.hunter.io/v2//leads?api_key=eb3697c6ff0dbc8d3167e5754aa304f6afbff5f7 [200 OK, 1.79KB, 374ms]
+  √  Status code is 200
+  √  Status code name has string
+  √  Response time is less than 2000ms
+
+└ GET - Busca  lead específico
+  GET https://api.hunter.io/v2//leads/68641038?api_key=eb3697c6ff0dbc8d3167e5754aa304f6afbff5f7 [200 OK, 1.55KB, 367ms]
+  √  Status code is 200
+  √  Status code name has string
+  √  Response time is less than 2000ms
+
+□ Leads / Editar lead
+└ PUT - Editar Lead
+  PUT https://api.hunter.io/v2//leads/68641038?api_key=eb3697c6ff0dbc8d3167e5754aa304f6afbff5f7 [204 No Content, 840B, 1081ms]
+  √  Status code name has string
+  √  Status code is 204
+
+□ Leads / Excluir lead
+└ DELETE - Excluir Lead
+  DELETE https://api.hunter.io/v2//leads/68641038?api_key=eb3697c6ff0dbc8d3167e5754aa304f6afbff5f7 [204 No Content, 840B, 510ms]
+  √  Status code name has string
+  √  Status code is 204
+
+□ Leads_Lists / Criar nova lista de lead
+└ POST - Criar Lead List
+  POST https://api.hunter.io/v2//leads_lists?api_key=eb3697c6ff0dbc8d3167e5754aa304f6afbff5f7 [201 Created, 1.07KB, 380ms]
+  √  Response time is less than 2000ms
+  √  Successful POST request
+  √  Status code name has string
+
+□ Leads_Lists / GET Leads List
+└ GET - Todas Leads Lists
+  GET https://api.hunter.io/v2//leads_lists?api_key=eb3697c6ff0dbc8d3167e5754aa304f6afbff5f7 [200 OK, 1.27KB, 436ms]
+  √  Status code is 200
+  √  Status code name has string
+  √  Response time is less than 2000ms
+
+└ GET - Recuperar lead list
+  GET https://api.hunter.io/v2//leads_lists/2602926?api_key=eb3697c6ff0dbc8d3167e5754aa304f6afbff5f7 [200 OK, 1.15KB, 369ms]
+  √  Status code is 200
+  √  Status code name has string
+  √  Response time is less than 2000ms
+
+□ Leads_Lists / Editar lista de lead
+└ PUT - Editar Lead List
+  PUT https://api.hunter.io/v2//leads_lists/2602926?api_key=eb3697c6ff0dbc8d3167e5754aa304f6afbff5f7 [204 No Content, 840B, 410ms]
+  √  Status code name has string
+  √  Status code is 204
+
+□ Leads_Lists / Excluir lista de lead
+└ DELETE - Excluir Lead List
+  DELETE https://api.hunter.io/v2//leads_lists/2602926?api_key=eb3697c6ff0dbc8d3167e5754aa304f6afbff5f7 [204 No Content, 840B, 360ms]
+  √  Status code name has string
+  √  Status code is 204
+
+Iteration 6/6
+
+□ Leads / Criar novo lead
+└ POST - Criar novo Lead
+  POST https://api.hunter.io/v2//leads?api_key=eb3697c6ff0dbc8d3167e5754aa304f6afbff5f7 [201 Created, 1.59KB, 1181ms]
+  √  Response time is less than 2000ms
+  √  Successful POST request
+  √  Status code name has string
+
+□ Leads / Recuperar todos leads cadastrados
+└ GET - Todos os leads
+  GET https://api.hunter.io/v2//leads?api_key=eb3697c6ff0dbc8d3167e5754aa304f6afbff5f7 [200 OK, 1.79KB, 365ms]
+  √  Status code is 200
+  √  Status code name has string
+  √  Response time is less than 2000ms
+
+└ GET - Busca  lead específico
+  GET https://api.hunter.io/v2//leads/68641063?api_key=eb3697c6ff0dbc8d3167e5754aa304f6afbff5f7 [200 OK, 1.55KB, 416ms]
+  √  Status code is 200
+  √  Status code name has string
+  √  Response time is less than 2000ms
+
+□ Leads / Editar lead
+└ PUT - Editar Lead
+  PUT https://api.hunter.io/v2//leads/68641063?api_key=eb3697c6ff0dbc8d3167e5754aa304f6afbff5f7 [204 No Content, 840B, 1028ms]
+  √  Status code name has string
+  √  Status code is 204
+
+□ Leads / Excluir lead
+└ DELETE - Excluir Lead
+  DELETE https://api.hunter.io/v2//leads/68641063?api_key=eb3697c6ff0dbc8d3167e5754aa304f6afbff5f7 [204 No Content, 840B, 567ms]
+  √  Status code name has string
+  √  Status code is 204
+
+□ Leads_Lists / Criar nova lista de lead
+└ POST - Criar Lead List
+  POST https://api.hunter.io/v2//leads_lists?api_key=eb3697c6ff0dbc8d3167e5754aa304f6afbff5f7 [201 Created, 1.07KB, 371ms]
+  √  Response time is less than 2000ms
+  √  Successful POST request
+  √  Status code name has string
+
+□ Leads_Lists / GET Leads List
+└ GET - Todas Leads Lists
+  GET https://api.hunter.io/v2//leads_lists?api_key=eb3697c6ff0dbc8d3167e5754aa304f6afbff5f7 [200 OK, 1.27KB, 386ms]
+  √  Status code is 200
+  √  Status code name has string
+  √  Response time is less than 2000ms
+
+└ GET - Recuperar lead list
+  GET https://api.hunter.io/v2//leads_lists/2602927?api_key=eb3697c6ff0dbc8d3167e5754aa304f6afbff5f7 [200 OK, 1.15KB, 364ms]
+  √  Status code is 200
+  √  Status code name has string
+  √  Response time is less than 2000ms
+
+□ Leads_Lists / Editar lista de lead
+└ PUT - Editar Lead List
+  PUT https://api.hunter.io/v2//leads_lists/2602927?api_key=eb3697c6ff0dbc8d3167e5754aa304f6afbff5f7 [204 No Content, 840B, 430ms]
+  √  Status code name has string
+  √  Status code is 204
+
+□ Leads_Lists / Excluir lista de lead
+└ DELETE - Excluir Lead List
+  DELETE https://api.hunter.io/v2//leads_lists/2602927?api_key=eb3697c6ff0dbc8d3167e5754aa304f6afbff5f7 [204 No Content, 840B, 339ms]
+  √  Status code name has string
+  √  Status code is 204
+
+┌─────────────────────────┬─────────────────────┬────────────────────┐
+│                         │            executed │             failed │
+├─────────────────────────┼─────────────────────┼────────────────────┤
+│              iterations │                   6 │                  0 │
+├─────────────────────────┼─────────────────────┼────────────────────┤
+│                requests │                  60 │                  0 │
+├─────────────────────────┼─────────────────────┼────────────────────┤
+│            test-scripts │                 114 │                  0 │
+├─────────────────────────┼─────────────────────┼────────────────────┤
+│      prerequest-scripts │                 138 │                  0 │
+├─────────────────────────┼─────────────────────┼────────────────────┤
+│              assertions │                 156 │                  2 │
+├─────────────────────────┴─────────────────────┴────────────────────┤
+│ total run duration: 1m 8.9s                                        │
+├────────────────────────────────────────────────────────────────────┤
+│ total data received: 15.2KB (approx)                               │
+├────────────────────────────────────────────────────────────────────┤
+│ average response time: 1093ms [min: 339ms, max: 30.3s, s.d.: 3.8s] │
+└────────────────────────────────────────────────────────────────────┘
+
+  #  failure                                       detail
+
+ 1.  AssertionError                                Response time is less than 2000ms
+     iteration: 2                                  expected 4046 to be below 2000
+                                                   at assertion:0 in test-script
+                                                   inside "Leads / Criar novo lead / POST - Criar novo Lead"
+
+ 2.  AssertionError                                Response time is less than 2000ms
+     iteration: 2                                  expected 30373 to be below 2000
+                                                   at assertion:2 in test-script
+                                                   inside "Leads_Lists / GET Leads List / GET - Todas Leads Lists"
+
+//Executando os testes pelo link
+C:\Users\t058442\Documents\Pessoal\Curso_Postman_Udemy\Hunter>newman run -d dados/dados_lead.csv https://api.getpostman.com/collections/13068592-78808ea4-c914-41ce-b19d-ada6add33bef?apikey=PMAK-5f9adc0636be40004411ff39-b19fb84d898dfaaefff934efabfd8555f6 --environment https://api.getpostman.com/environments/13068592-6c18d9d4-9571-477a-8c0f-0bc8af8d79e9?apikey=PMAK-5f9adc0636be40004411ff39-b19fb84d898dfaaefff934efabfd8555f6 --folder Leads
+
+//Criando o relatório HtmlExtra
+C:\Users\t058442\Documents\Pessoal\Curso_Postman_Udemy\Hunter>ronments/13068592-6c18d9d4-9571-477a-8c0f-0bc8af8d79e9?apikey=PMAK-5f9adc0636be40004411ff39-b19fb84d898dfaaefff934efabfd8555f6 --folder Leads -r htmlextra
