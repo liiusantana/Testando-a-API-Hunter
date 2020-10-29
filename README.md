@@ -7,18 +7,18 @@ Published Collection: https://documenter.getpostman.com/view/13068592/TVYKYviT
 
 Aqui vamos ver:
 
-Requisições: GET, POST, DELETE, PUT e PATCH
-Autorizações: Bearer Token, Basic Auth e Inherit auth from parent
-Params: Query Params e Patch Variables
-Pre-request Script: Hierarquia dos pre-requests scripts (Collection, Folder e Request).
-Tests
-Variavéis: local, Globals, Environment e Collection
-Ambiente de Teste
-Collection Run
-Monitors
-Teams/Workspaces
-Data: json e csv (arquivos de testes do projeto anexos)
-Log
-Comandos no Newman
-Relatórios: Html, json e uso de templates para gerar relatórios (arquivos de testes do projeto anexos)
-CI Jenkins
+* Requisições: GET, POST, DELETE e PUT
+* Autorizações: API KEY
+* Query Params
+* Pre-request Script
+* Tests
+* Variavéis Environment
+* Ambiente de Teste
+* Collection Run
+* Monitors
+* Teams/Workspaces
+* Trabalhando com arquivos de dados tipo .csv
+* Log
+* Comandos no Newman
+* Relatórios: Html, json e uso de templates para gerar relatórios (arquivos de testes do projeto anexos)
+* CI Jenkins
