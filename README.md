@@ -4,6 +4,7 @@ Automação de testes de API
 API usada nos testes: Hunter https://hunter.io/
 Documentação da API: https://hunter.io/api-documentation/v2
 Published Collection: https://documenter.getpostman.com/view/13068592/TVYKYviT
+Json Path Finder: https://jsonpathfinder.com/
 
 Aqui vamos ver:
 
